@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign up</title>
+<script src="https://kit.fontawesome.com/223bfee300.js" crossorigin="anonymous"></script>
+<style>
+body{
+background-image:linear-gradient(to bottom right,rgb(228, 17, 147),rgb(124, 38, 146));
+background-repeat: no-repeat;
+}
+.login-page{
+width:360px;
+padding: 10% 0 0;
+margin :auto; 
+} 
+.form{
+z-index: 1;
+color:white;
+max-width:360px;
+margin:0 auto 100px;
+padding:45px;
+text-align:center;
+}
+.form:hover{
+border:4px ridge rgb(193, 197, 197);
+}
+.form input{
+outline:1;
+color:rgb(0, 0, 0);
+width:100%;
+margin:0 0 15px;
+padding:15px;
+font-weight:bold;
+font-size:10px;
+box-sizing:border-box;
+font-size:14px;
+border:6px ridge white;
+background-color:white;
+}
+.form .submit{
+font-family:"Roboto","san-serif";
+text-transform:uppercase;
+outline:0;
+width:100%;
+border:6px ridge white;
+padding:15px;
+color:white;
+background-color:#4cAF50;
+font-size:14px;
+cursor:pointer;
+}
+.form .submit:hover,form.submit:active{
+background-color:#3d8330;
+}
+.form .message{
+margin:15px 0 0;
+color:rgb(217, 255, 0);
+font-size:20px;
+}
+.form .message a{
+color:white;
+text-decoration:none;
+}
+.form .register-form{
+display:none;
+}
+#icon i{
+    border-radius:50px;
+    font-size:25px;
+}
+#icon i:hover{ border:6px solid rgba(216, 209, 218, 0.4) ;}
+
+input:invalid#newname{color:red;}
+input,inputvalid#newname{color:black;}
+input:invalid#loginname{color:red;}
+input,inputvalid#loginname{color:black;}
+input:invalid#ph{color:red;}
+input,inputvalid#ph{color:black;}
+</style>
+</head>
+<body>
+<div class="login-page">
+<div class="form">
+<form class="register-form" action="index1.html">
+<input type="text" placeholder="user name" id="newname" name="name" maxlength="10" pattern="[A-z ]{4,10}" title="User name must contain alphabetic name (A-z) with atleast 4 characters and at max 10 eg:John" required>
+<input type="tel" placeholder="Phone Number" id="ph" name="ph" autocomplete="on" maxlength="10" pattern="[0-9]{10,10}" title="Phone number must be 10 digit number" required>
+ <input type="email" placeholder="email id" name="email id" id="emailid" required/>
+ <input type="password" placeholder="password" id="pass" name="password" minlength="4" title="At least have 4 characters" required/>
+ <button type="submit" class="submit">CREATE</button>
+<p class="message" >Already Registered?<a href="#">Login</a></p>
+</form>
+<form>
+<form class="login-form" >
+<input type="text" placeholder="user name" id="loginname"  name="name" maxlength="10" minlength="4" pattern="[A-z ]{1,10}"  title="User name must contain alphabetic name (A-z) with atleast 4 characters and at max 10 eg:John" required>
+<input type="password" placeholder="password"  id="pas" name="password"  title="At least have 4 characters"  required/>
+<input type="button" class="submit" value="LOGIN"  onclick="getInfo()">
+<p class="message">Not Registered?<a href="#">Register</a></p>
+
+<p><fieldset>
+    <legend style="color:white;">Or Login With</legend>
+    <div id="icon">
+        <i class="fab fa-linkedin"></i>&nbsp&nbsp
+        <i class="fab fa-instagram"></i>&nbsp&nbsp
+        <i class="fab fa-google"></i>&nbsp&nbsp
+        <i class="fab fa-facebook-square"></i>
+        </div>
+</fieldset></p>
+    
+</form>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function(){   
+$('.message a').click(function(){
+$('form').animate({height:"toggle",opacity:"toggle"}, "slow");
+});
+ });
+function getInfo(){ 
+var username=document.getElementById("loginname").value;
+var password=document.getElementById("pas").value
+//var newname=document.getElementById("newname").value
+//var pass=document.getElementById('pass').value
+if((username=="Varnika" && password=="pass1"))//||((newname.length>=4) && (pass.length>=4)))
+{
+alert('success');
+window.location="index1.html";
+}
+else{
+alert('Check again!!')
+}}
+
+</script>
+</body>
+</html>

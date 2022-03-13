@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <title>Your Cart</title>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="navigation container">
+      <div class="logo">
+        <h1>Colevo</h1>
+      </div>
+      <div class="menu">
+        <div class="top-nav">
+          <div class="logo">
+            <h1>Colevo</h1>
+          </div>
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index1.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#account" class="nav-link">Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="cart.html" class="cart-icon">
+        <i class="bx bx-shopping-bag"></i>
+      </a>
+
+      <div class="hamburger">
+        <i class="bx bx-menu"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Items -->
+  <div class="container-md cart">
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+      <tr class="cart-info1" >
+        <td>
+          <div class="cart-info">
+           <!-- <img src="./images/pic1.jpg" alt="">-->
+           <img src="images/jumpsuit.jpg" alt=""> 
+           <div>
+              <p>Girls Jumpsuit</p>
+              <span>Price: ₹849</span>
+              <br />
+              <a href="#" class="remove1">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>₹849</td>
+      </tr>
+      <tr class="cart-info1">
+        <td>
+          <div class="cart-info">
+            <img src="images/tommyshirt.jpg" alt="">
+            <div>
+              <p>Boy’s T-Shirt</p>
+              <span>Price: ₹699</span>
+              <br />
+              <a href="#" class="remove2">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>₹699</td>
+      </tr>
+      <tr class="cart-info1">
+        <td>
+          <div class="cart-info">
+            <img src="images\black-t-shirt-500x500.png" alt="">
+            <div>
+              <p>Boy’s Black T-Shirt</p>
+              <span>Price: ₹549</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>₹549</td>
+      </tr>
+      <tr class="cart-info1">
+        <td>
+          <div class="cart-info">
+            <img src="images/niketshirt.jfif" alt="">
+            <div>
+              <p>Boy’s Nike T-Shirt</p>
+              <span>Price: ₹649</span>
+              <br />
+              <a href="#" class="remove3">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>₹649</td>
+      </tr>
+      <tr class="cart-info1">
+        <td>
+          <div class="cart-info">
+            <img src="images\girls shoes.jpg" alt="">
+            <div>
+              <p>Girl's Shoes</p>
+              <span>Price: ₹799</span>
+              <br />
+              <a href="#">remove</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>₹799</td>
+      </tr>
+    </table>
+
+    <div class="cart-info1" class="total-price">
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td>₹3545</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td>₹638</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>₹4183</td>
+        </tr>
+      </table>
+      <a href="payment gateway\payment\payment.html" class="checkout btn">Proceed To Checkout</a>
+
+    </div>
+
+  </div>
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="links\About Us.html">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div id="account" class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="login page.html">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div id="contact" class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            42 Dream House, Dreammy street, 7131 Dreamville, India
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            colevoe-com@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+           9876121115
+          </div>
+          <div>
+            <span>
+              <i class="far fa-paper-plane"></i>
+            </span>
+            Dream City, India
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <!-- Custom Script -->
+  <script src="./js/index.js"></script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".cart-info1").dblclick(function(){
+    $(this).hide();
+  });
+});
+/*$(document).ready(function(){
+  $(".remove2").click(function(){
+    $(".cart-info2").hide();
+  });
+});*/
+</script>
+</body>
+
+</html>

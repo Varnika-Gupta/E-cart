@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><style>
+  a{color:white;
+  text-decoration:none;}</style></head>
+    <body>
+        <link rel="stylesheet" href="yo.css">
+        <div class="body-text">FILL UP YOUR DETAILS</div>
+  <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Payment Information</h1>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" type="text" name="first-name" placeholder="First Name" pattern="[A-z]*" required/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname"  pattern="[A-z]*" required/>
+          <input id="input-field" type="text"  name="number" autocomplete="on" maxlength="16" placeholder="Card Number" pattern="[0-9]{16,16}" required/>
+          <input id="column-left" type="text" name="expiry" autocomplete="on" placeholder="MM / YY" title="eg: 05/24 "required>
+          <input id="column-right" type="text" name="cvc" autocomplete="on" placeholder="CCV"  maxlength="3" required/>
+         
+          <div class="card-wrapper"></div>
+      
+          <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address" required/>
+          <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City" required/>
+          <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="6" placeholder="ZIP code" required/>
+          <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email" required/>
+         <button><a href="\payment gateway\delivered.html">SUBMIT</a></button>
+    </form>
+  </div>
+</body>
+</html>
